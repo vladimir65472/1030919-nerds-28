@@ -1,7 +1,8 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Владимир  Чадов](https://up.htmlacademy.ru/htmlcss/28/user/1030919).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/
+	profile/seraphim).
 
 ---
 
