@@ -6,10 +6,10 @@
   </head>
  <body>
     <header>
+      <a>
+        <img src="#" width="160" height="65" alt="Логотип проекта Нёрдс">
+      </a>
       <nav>
-        <a>
-          <img src="#" width="1440" height="545" alt="Логотип проекта Нёрдс">
-        </a>
         <ul>
             <li><a href="./index.html">Студия</a></li>
             <li><a href="#">Клиенты</a></li>
@@ -23,98 +23,154 @@
       </nav>
     </header>
     <main>
-      <h1>Магазин готовых шаблонов</h1>
-      <form>
-        <fieldset>
-          <legend>Сетка:</legend>
-          <input type="radio" id="adaptive" name="grid" value="adaptive" checked>
-          <label for="adaptive">Адаптивная</label>
+      <div class="container">
+        <h1>Магазин готовых шаблонов</h1>
+        <section>
+          <div>
+            <span>стоимость</span>
+            /*Тут будет прямоугольник с ползунками для сортировки*/
+          </div>
+          <div>
+            <label for="price-min">От</label>
+            <input type="number" id="price-min">
+          </div>
+          <div>
+            <label for="price-max">До</label>
+            <input type="number" id="price-max">
+          </div>
+          <ul>Сортировать:
+            <li><a href="#">По цене </a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По названию</a></li>
+            <li><button>По убыванию</button></li>
+            <li><button>По возрастанию</button></li>
+          </ul>
+        </section>
+        <form>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li>
+                <input type="radio" id="adaptive" name="grid" value="adaptive" checked>
+                <label for="adaptive">Адаптивная</label>
+              </li>
+              <li>
+                <input type="radio" id="fix" name="grid"  value="fix">
+                <label for="fix">Фиксированная</label>
+              </li>
 
-          <input type="radio" id="fix" name="grid"  value="fix">
-          <label for="fix">Фиксированная</label>
+              <li>
+                <input type="radio" id="rub" name="grid" value="grid">
+                <label for="rub">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" id="slider"  checked>
+                <label for="slider">Слайдер</label>
+              </li>
+              <li>
+                <input type="checkbox" id="benefits" value="benefits">
+                <label for="benefits">Блок преимуществ </label>
+              </li>
+              <li>
+                <input type="checkbox" id="news"  value="news"checked>
+                <label for="news">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox" id="galery" value="galery">
+                <label for="galery">Галерея</label>
+              </li>
+              <li>
+                <input type="checkbox" id="card" value="card">
+                <label for="card">Корзина</label>
+              </li>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="#">
+              <h3>Sedona</h3>
+              <p>Информационный сайт для туристов</p>
+              <button>9900 руб</button>
+            </a>
+          </li>
 
-          <input type="radio" id="rub" name="grid" value="grid">
-          <label for="rub">Резиновая</label>
-        </fieldset>
-        <fieldset>
-          <legend>Особенности:</legend>
-
-
-
-          <input type="checkbox" id="slider"  checked>
-          <label for="slider">Слайдер</label>
-
-
-
-
-          <input type="checkbox" id="benefits" value="benefits">
-          <label for="benefits">Блок преимуществ </label>
-
-          <input type="checkbox" id="news"  value="news"checked>
-          <label for="news">Новости</label>
-
-          <input type="checkbox" id="galery" value="galery">
-          <label for="galery">Галерея</label>
-
-          <input type="checkbox" id="card" value="card">
-          <label for="card">Корзина</label>
-
-        </fieldset>
-        <button type="submit">Показать</button>
-      </form>
-      <ul>
-        <li>
-          <img src="#">
-          <h3>Sedona</h3>
-          <p>Информационный сайт для туристов</p>
-          <button>9900 руб</button>
-        </li>
-        <li>
-          <img src="#">
-          <h3>Pink</h3>
-          <p>приложение</p>
-          <button>цена</button>
-        </li>
-        <li>
-          <img src="#">
-          <h3>Бородинцкий</h3>
-          <p>Барбершоп</p>
-          <button>цена</button>
-        </li>
-        <li>
-          <img src="#">
-          <h3> Mishka</h3>
-          <p>Магазин игрушек ручной работы для дома</p>
-          <button>цена</button>
-        </li>
-        <li>
-          <img src="#">
-          <h3>А+</h3>
-          <p>Учебный сайт</p>
-          <button>цена</button>
-        </li>
-        <li>
-          <img src="#">
-          <h3>Кваст</h3>
-          <p>Магазин кваса</p>
-          <button>цена</button>
-        </li>
-      </ul>
+          <li>
+            <a href="#">
+              <img src="#">
+              <h3>Pink</h3>
+              <p>приложение</p>
+              <button>цена</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="#">
+              <h3>Бородинцкий</h3>
+              <p>Барбершоп</p>
+              <button>цена</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="#">
+              <h3> Mishka</h3>
+              <p>Магазин игрушек ручной работы для дома</p>
+              <button>цена</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="#">
+              <h3>А+</h3>
+              <p>Учебный сайт</p>
+              <button>цена</button>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="#">
+              <h3>Кваст</h3>
+              <p>Магазин кваса</p>
+              <button>цена</button>
+            </a>
+          </li>
+        </ul>
+        <div>
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>Следующая</li>
+          </ul>
+        </div>
+      </div>
     </main>
     <footer>
-      <ul>
-        <li>
-          <img src="#">
-        </li>
-         <li>
-          <img src="#">
-        </li>
-         <li>
-          <img src="#">
-        </li>
-      </ul>
-      <p>Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <img src="#" width="1440" height="416" alt="Карта">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="#">
+          </li>
+           <li>
+            <img src="#">
+          </li>
+           <li>
+            <img src="#">
+          </li>
+        </ul>
+        <div>
+          <p>Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
