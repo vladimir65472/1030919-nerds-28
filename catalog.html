@@ -3,9 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./normalize.css">
+  </head>
+
   </head>
  <body>
-    <header>
+    <header class="header">
       <div class="container">
         <a>
           <img src="./img/svg-nerds/nerds-logo.svg" width="160" height="65" alt="Логотип проекта Нёрдс">
@@ -13,133 +18,148 @@
 
         <nav>
           <ul>
-              <li><a href="./index.html">Студия</a></li>
-              <li><a href="#">Клиенты</a></li>
-              <li><a href="#">Магазин</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li class="menu-item"><a href="./index.html">Студия</a></li>
+              <li class="menu-item"><a href="#">Клиенты</a></li>
+              <li class="menu-item"><a href="#">Магазин</a></li>
+              <li class="menu-item"><a href="#">Контакты</a></li>
           </ul>
           <ul>
-            <li><a href="#">Корзина</a></li>
+            <li class="card"><a href="#">Корзина</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
       <div class="container">
-        <h1>Магазин готовых шаблонов</h1>
-        <form>
-          <div>
-            <span>стоимость</span>
-            /*Тут будет прямоугольник с ползунками для сортировки*/
-          </div>
+        <h1 class="title-catalog">Магазин готовых шаблонов</h1>
 
-           <div>
-            <label for="price-min">От</label>
-            <input type="number" id="price-min">
-          </div>
-          <div>
-            <label for="price-max">До</label>
-            <input type="number" id="price-max">
-          </div>
-          <fieldset>
-            <legend>Сетка:</legend>
-            <ul>
-              <li>
+        <form class="filter">
+          <fieldset class="filter-grid">
+            <legend class="filter-grid-title">Сетка:</legend>
+            <ul class="filter-grid-items">
+              <li class="filter-grid-item">
                 <input type="radio" id="adaptive" name="grid" value="adaptive" checked>
                 <label for="adaptive">Адаптивная</label>
               </li>
-              <li>
+              <li class="filter-grid-item">
                 <input type="radio" id="fix" name="grid"  value="fix">
                 <label for="fix">Фиксированная</label>
               </li>
 
-              <li>
+              <li class="filter-grid-item">
                 <input type="radio" id="rub" name="grid" value="grid">
                 <label for="rub">Резиновая</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Особенности:</legend>
-            <ul>
-              <li>
+
+
+
+          <fieldset class="filter-features">
+            <legend class="filter-features-title">Особенности:</legend>
+            <ul class="filter-features-items">
+
+              <li class="filter-features-item">
                 <input type="checkbox" id="slider"  checked>
                 <label for="slider">Слайдер</label>
               </li>
-              <li>
+              <li class="filter-features-item">
                 <input type="checkbox" id="benefits" value="benefits">
                 <label for="benefits">Блок преимуществ </label>
               </li>
-              <li>
+              <li class="filter-features-item">
                 <input type="checkbox" id="news"  value="news"checked>
                 <label for="news">Новости</label>
               </li>
-              <li>
+              <li class="filter-features-item">
                 <input type="checkbox" id="galery" value="galery">
                 <label for="galery">Галерея</label>
               </li>
-              <li>
+              <li class="filter-features-item">
                 <input type="checkbox" id="card" value="card">
                 <label for="card">Корзина</label>
               </li>
           </fieldset>
-          <button type="submit" value="Кнопка показать">Показать</button>
+          <button class="filter-btn" type="submit" aria-label="Кнопка показать">Показать</button>
         </form>
-        <ul>Сортировать:
-            <li><a href="#">По цене </a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По названию</a></li>
-            <li><a href="#">По убыванию</a></li>
-            <li><a href="#">По возрастанию</a></li>
+
+
+        <form class="sorting">
+          <div class="sorting-cost">
+            <div>
+              <span class="sorting-cost-title">стоимость:</span>
+              /*Тут будет прямоугольник с ползунками для сортировки*/
+            </div>
+
+             <div class="sorting-cost-min">
+              <label for="price-min">От</label>
+              <input type="number" id="price-min">
+            </div>
+            <div class="sorting-cost-max">
+              <label for="price-max">До</label>
+              <input type="number" id="price-max">
+            </div>
+        </div>
+
+        <ul class="sorting-list">
+          <span class="sortimg-list-title">Сортировать:</span>
+            <li class="sorting-list-item"><a href="#">По цене </a></li>
+            <li class="sorting-list-item"><a href="#">По типу</a></li>
+            <li class="sorting-list-item"><a href="#">По названию</a></li>
+            <li class="sorting-list-item"><a href="#">По убыванию</a></li>
+            <li class="sorting-list-item"><a href="#">По возрастанию</a></li>
           </ul>
-        <ul>
-          <li>
+        </form>
+
+
+        <ul class="catalog">
+          <li class="catalog-item">
             <a href="#">
-              <img src="./img/png-nerds/img-sedona.png">
-              <h3>Sedona</h3>
-              <p>Информационный сайт для туристов</p>
-              <button value="цена">9900 руб</button>
+              <img class="catalog-item-img" src="./img/png-nerds/img-sedona.png">
+              <h3 class="catalog-item-title">Sedona</h3>
+              <p class="catalog-item-description">Информационный сайт для туристов</p>
+              <button class="catalog-item-price" aria-label="цена">9900 руб</button>
             </a>
           </li>
 
-          <li>
+          <li class="catalog-item">
             <a href="#">
-              <img src="./img/png-nerds/img-pink.png">
-              <h3>Pink</h3>
-              <p>приложение</p>
-              <button value="цена">цена</button>
+              <img class="catalog-item-img" src="./img/png-nerds/img-pink.png">
+              <h3 class="catalog-item-title">Pink</h3>
+              <p class="catalog-item-description">приложение</p>
+              <button class="catalog-item-price" aria-label="цена">цена</button>
             </a>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="#">
-              <img src="./img/png-nerds/img-barbershop.png">
-              <h3>Бородинцкий</h3>
-              <p>Барбершоп</p>
-              <button value="цена">цена</button>
+              <img class="catalog-item-img" src="./img/png-nerds/img-barbershop.png">
+              <h3 class="catalog-item-title">Бородинцкий</h3>
+              <p class="catalog-item-description">Барбершоп</p>
+              <button class="catalog-item-price" aria-label="цена">цена</button>
             </a>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="#">
-              <img src="./img/png-nerds/img-mishka.png">
-              <h3> Mishka</h3>
-              <p>Магазин игрушек ручной работы для дома</p>
-              <button value="цена">цена</button>
+              <img  class="catalog-item-img" src="./img/png-nerds/img-mishka.png">
+              <h3 class="catalog-item-title">Mishka</h3>
+              <p class="catalog-item-description">Магазин игрушек ручной работы для дома</p>
+              <button class="catalog-item-price" aria-label="цена">цена</button>
             </a>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="#">
-              <img src="./img/png-nerds/img-aplus.png">
-              <h3>А+</h3>
-              <p>Учебный сайт</p>
-              <button value="цена">цена</button>
+              <img class="catalog-item-img" src="./img/png-nerds/img-aplus.png">
+              <h3 class="catalog-item-title">А+</h3>
+              <p class="catalog-item-description">Учебный сайт</p>
+              <button class="catalog-item-price" aria-label="цена">цена</button>
             </a>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="#">
-              <img src="./img/png-nerds/img-kvast.png">
-              <h3>Кваст</h3>
-              <p>Магазин кваса</p>
-              <button value="цена">цена</button>
+              <img class="catalog-item-img" src="./img/png-nerds/img-kvast.png">
+              <h3 class="catalog-item-title">Кваст</h3>
+              <p class="catalog-item-description">Магазин кваса</p>
+              <button class="catalog-item-price" aria-label="цена">цена</button>
             </a>
           </li>
         </ul>
@@ -152,27 +172,24 @@
       </div>
     </main>
     <footer>
-       <form metod="get">
-        <div>
-          <p>Напишите нам</p>
-          <button value="Кнопка закрыть">Крестик</button>
-        </div>
-
-        <label for="name-form">Ваше имя:</label>
-        <input type="text" id="name-form" placeholder="Имя Фамилия">
-
-        <label for="email-form">Ваш email:</label>
-        <input type="email" id="email-form" placeholder="email@example.com">
-
-
-        <label for="text-form">Текст письма:</label>
-        <textarea name="text" id="text-form" placeholder="В свободной форме"></textarea>
-        <button type="submit" value="Кнопка отправить" >Отправить</button>
-
-      </form>
       <div>
         <img src="./img/png-nerds/map.png" width="1440" height="416" alt="Карта">
         <img src="./img/png-nerds/map-marker.png" width="231" height="190" alt="Маркер">
+      </div>
+
+      <div class="contact-adress">
+
+        <h3 class="contact-adress-title">Nerds desigh studio</h3>
+
+        <div>
+          <p class="adress" >191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+
+        <div>
+          <a class="phone" href="tel:+78122757575">тел.+7(812)275-75-75</a>
+        </div>
+        <a href="#" class="contact-adress-button">Напишите нам</a>
+
       </div>
       <div class="container">
         <ul>
@@ -186,12 +203,33 @@
             <img src="./img/svg-nerds/insta-icon.svg" width="21" height="21" alt="Логотип инстаграма">
           </li>
         </ul>
-        <div>
-          <p>Давайте дружить, это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
+        <div class="welcome-frends">
+          <p class="frends-title">Давайте дружить, это выгодно!</p>
+          <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
     </footer>
+    <form metod="get">
+      <p>Напишите нам</p>
+      <button aria-label="Кнопка закрыть">Крестик</button>
+
+      <div>
+        <label for="name-form">Ваше имя:</label>
+        <input type="text" id="name-form" placeholder="Имя Фамилия">
+      </div>
+
+      <div>
+        <label for="email-form">Ваш email:</label>
+        <input type="email" id="email-form" placeholder="email@example.com">
+      </div>
+
+
+      <div>
+        <label for="text-form">Текст письма:</label>
+        <textarea name="text" id="text-form" placeholder="В свободной форме"></textarea>
+      </div>
+      <button type="submit" aria-label="Кнопка отправить" >Отправить</button>
+    </form>
   </body>
 </html>
 
