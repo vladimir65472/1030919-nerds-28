@@ -7,7 +7,6 @@
   src: local('Roboto'), local('Roboto-Regular'),
        url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
        url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
-
 }
 
 /* roboto-700 - latin_cyrillic */
@@ -1517,7 +1516,7 @@ a {
   border-color: #000000;
 }
 
-.popup-input[type="name"]:invalid {
+.popup-input[type="text"]:invalid {
   border-color: #E74246;
   color: #E74246;
 }
@@ -1702,7 +1701,15 @@ a {
 
 .map {
   position: relative;
-  width: 100%;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.map-img {
+  width: 1440px;
+  text-align: center;
+  height: auto;
+  margin: 0 auto;
 }
 
 .pin {

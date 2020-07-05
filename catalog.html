@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
 
-  </head>
+
  <body>
     <header class="header">
       <div class="header-container">
@@ -37,8 +37,8 @@
           <form class="filter" method="get" action="#">
 
 
-              <fildset class="filter-cost">
-                <legend class="filter-cost-title">Стоимость:</legend>
+              <div class="filter-cost">
+                <div class="filter-cost-title">Стоимость:</div>
 
                 <div class="rect">
                   <div class="strip"></div>
@@ -62,10 +62,10 @@
                     <input class="price-field" type="number" id="before" placeholder="15 000">
                   </div>
                 </div>
-              </fildset>
+              </div>
 
-              <fieldset class="filter-grid">
-                <legend class="filter-grid-title">Сетка:</legend>
+              <div class="filter-grid">
+                <div class="filter-grid-title">Сетка:</div>
                 <ul class="filter-grid-items">
                   <li class="filter-grid-item">
                     <input class="filter-grid-input" type="radio" id="adaptive" name="grid" value="adaptive" checked>
@@ -73,7 +73,7 @@
                   </li>
                   <li class="filter-grid-item">
                     <input class="filter-grid-input" type="radio" id="fix" name="grid"  value="fix">
-                    <label class= "filter-grid-label"for="fix">Фиксированная</label>
+                    <label class= "filter-grid-label" for="fix">Фиксированная</label>
                   </li>
 
                   <li class="filter-grid-item">
@@ -81,21 +81,21 @@
                     <label class= "filter-grid-label" for="rub">Резиновая</label>
                   </li>
                 </ul>
-              </fieldset>
+              </div>
 
-              <fieldset class="filter-features">
-                <legend class="filter-features-title">Особенности:</legend>
+              <div class="filter-features">
+                <div class="filter-features-title">Особенности:</div>
                 <ul class="filter-features-items">
                   <li class="filter-features-item">
                     <input class="filter-features-input" type="checkbox" id="slider"  checked>
-                    <label class="filter-features-label"for="slider">Слайдер</label>
+                    <label class="filter-features-label" for="slider">Слайдер</label>
                   </li>
                   <li class="filter-features-item">
                     <input class="filter-features-input" type="checkbox" id="benefits" value="benefits">
                     <label class="filter-features-label" for="benefits">Блок преимуществ </label>
                   </li>
                   <li class="filter-features-item">
-                    <input class="filter-features-input" type="checkbox" id="news"  value="news"checked>
+                    <input class="filter-features-input" type="checkbox" id="news"  value="news" checked>
                     <label class="filter-features-label" for="news">Новости</label>
                   </li>
                   <li class="filter-features-item">
@@ -106,7 +106,8 @@
                     <input class="filter-features-input" type="checkbox" id="card" value="card">
                     <label class="filter-features-label" for="card">Корзина</label>
                   </li>
-              </fieldset>
+                </ul>
+              </div>
 
               <button class="filter-btn" type="submit" aria-label="Кнопка показать"><span class="filter-btn-text">Показать</span></button>
 
@@ -115,7 +116,7 @@
 
           <div class="catalog-sorting-wraper">
 
-            <form class="sorting">
+            <form class="sorting" method="get">
 
               <span class="sortimg-list-title">Сортировать:</span>
 
@@ -134,7 +135,6 @@
 
             <ul class="catalog">
               <li class="catalog-item">
-                <a href="#">
                   <div class="browser-img">
                     <div class="browser-img-container">
                       <div class="browser-img-circle"></div>
@@ -143,7 +143,7 @@
                     </div>
                   </div>
 
-                  <img class="catalog-item-img" src="./img/png-nerds/img-sedona.png" width="358" height="576">
+                  <img class="catalog-item-img" src="./img/png-nerds/img-sedona.png" width="358" height="576" alt="Картинка товара">
 
                   <div class="catalog-item-wrapper">
                     <h3 class="catalog-item-title">Sedona</h3>
@@ -152,12 +152,9 @@
                       <div class="catalog-item-price-wrapper">9900 руб</div>
                     </a>
                   </div>
-                </a>
-
               </li>
 
               <li class="catalog-item">
-                <a href="#">
                    <div class="browser-img">
                     <div class="browser-img-container">
                     <div class="browser-img-circle"></div>
@@ -166,7 +163,7 @@
                     </div>
                   </div>
 
-                  <img class="catalog-item-img" src="./img/png-nerds/img-pink.png">
+                  <img class="catalog-item-img" src="./img/png-nerds/img-pink.png" width="358" height="576" alt="Картинка товара">
 
                   <div class="catalog-item-wrapper">
                     <h3 class="catalog-item-title">Pink</h3>
@@ -175,12 +172,10 @@
                       <div class="catalog-item-price-wrapper">9900 руб</div>
                     </a>
                   </div>
-                </a>
               </li>
 
 
               <li class="catalog-item">
-                <a href="#">
                   <div class="browser-img">
                     <div class="browser-img-container">
                       <div class="browser-img-circle"></div>
@@ -188,7 +183,7 @@
                       <div class="browser-img-circle"></div>
                     </div>
                   </div>
-                  <img class="catalog-item-img" src="./img/png-nerds/img-barbershop.png">
+                  <img class="catalog-item-img" src="./img/png-nerds/img-barbershop.png" width="358" height="576" alt="Картинка товара">
                   <div class="catalog-item-wrapper">
                     <h3 class="catalog-item-title">Бородинский</h3>
                     <p class="catalog-item-description">Барбершоп</p>
@@ -196,10 +191,8 @@
                       <div class="catalog-item-price-wrapper">9900 руб</div>
                     </a>
                   </div>
-                </a>
               </li>
               <li class="catalog-item">
-                <a href="#">
                    <div class="browser-img">
                     <div class="browser-img-container">
                     <div class="browser-img-circle"></div>
@@ -207,7 +200,7 @@
                       <div class="browser-img-circle"></div>
                     </div>
                   </div>
-                  <img  class="catalog-item-img" src="./img/png-nerds/img-mishka.png">
+                  <img  class="catalog-item-img" src="./img/png-nerds/img-mishka.png" width="358" height="576" alt="Картинка товара">
                   <div class="catalog-item-wrapper">
                     <h3 class="catalog-item-title">Mishka</h3>
                     <p class="catalog-item-description">Магазин игрушек ручной работы для дома</p>
@@ -215,10 +208,8 @@
                       <div class="catalog-item-price-wrapper">9900 руб</div>
                     </a>
                   </div>
-                </a>
               </li>
               <li class="catalog-item">
-                <a href="#">
                   <div class="browser-img">
                     <div class="browser-img-container">
                       <div class="browser-img-circle"></div>
@@ -226,7 +217,7 @@
                       <div class="browser-img-circle"></div>
                     </div>
                   </div>
-                  <img class="catalog-item-img" src="./img/png-nerds/img-aplus.png">
+                  <img class="catalog-item-img" src="./img/png-nerds/img-aplus.png" width="358" height="576" alt="Картинка товара">
                   <div class="catalog-item-wrapper">
                     <h3 class="catalog-item-title">А+</h3>
                     <p class="catalog-item-description">Учебный сайт</p>
@@ -234,10 +225,8 @@
                       <div class="catalog-item-price-wrapper">9900 руб</div>
                     </a>
                   </div>
-                </a>
               </li>
               <li class="catalog-item">
-                <a href="#">
                   <div class="browser-img">
                     <div class="browser-img-container">
                       <div class="browser-img-circle"></div>
@@ -245,7 +234,7 @@
                       <div class="browser-img-circle"></div>
                     </div>
                   </div>
-                  <img class="catalog-item-img" src="./img/png-nerds/img-kvast.png">
+                  <img class="catalog-item-img" src="./img/png-nerds/img-kvast.png" width="358" height="576" alt="Картинка товара">
                   <div class="catalog-item-wrapper">
                     <h3 class="catalog-item-title">Кваст</h3>
                     <p class="catalog-item-description">Магазин кваса</p>
@@ -253,25 +242,24 @@
                       <div class="catalog-item-price-wrapper">9900 руб</div>
                     </a>
                   </div>
-                </a>
               </li>
             </ul>
 
             <ul class="page-number">
 
 
-              <li class="page-number-button button-link-active" aria-label="кнопка 1">
+              <li class="page-number-button button-link-active">
                 <a class="button-link" href="#">1</a>
               </li>
 
 
-              <li class="page-number-button" aria-label="кнопка 2">
+              <li class="page-number-button">
                 <a class="button-link" href="#">2</a>
               </li>
-              <li class="page-number-button" aria-label="кнопка 3">
+              <li class="page-number-button">
                 <a class="button-link" href="#">3</a>
               </li>
-              <li class="page-number-button-next" aria-label="Следующая">
+              <li class="page-number-button-next">
                 <a class="button-link-next" href="#">Следующая</a>
               </li>
             </ul>
@@ -281,7 +269,7 @@
     </main>
    <footer>
       <div class="map">
-        <img src="./img/png-nerds/map.png" width="100%" height="416" alt="Карта">
+        <img class="map-img" src="./img/png-nerds/map.png" width="1440" height="416" alt="Карта">
         <img class="pin" src="./img/png-nerds/map-marker.png" width="231" height="190" alt="Маркер">
         <div class="contact-adress">
           <h3 class="contact-adress-title">Nerds desigh studio</h3>
@@ -330,7 +318,7 @@
 
 
     </footer>
-    <form class="popup" metod="get">
+    <form class="popup" method="get">
       <div class="popup-title-wrapper">
         <p class="popup-title">Напишите нам</p>
         <button class="close-button" aria-label="Кнопка закрыть"></button>
@@ -340,19 +328,19 @@
 
         <div class="wrapper-name-popup">
           <label class="popup-label" for="name-form">Ваше имя:</label>
-          <input class="popup-input" type="text" id="name-form" placeholder="Имя Фамилия">
+          <input class="popup-input" type="text" id="name-form" placeholder="Имя Фамилия" required>
         </div>
 
         <div>
           <label class="popup-label" for="email-form">Ваш email:</label>
-          <input class="popup-input" type="email" id="email-form" placeholder="email@example.com">
+          <input class="popup-input" type="email" id="email-form" placeholder="email@example.com" required>
         </div>
       </div>
 
 
       <div>
         <label class="popup-label" for="text-form">Текст письма:</label>
-        <textarea class="popup-textarea" name="text" id="text-form" placeholder="В свободной форме"></textarea>
+        <textarea class="popup-textarea" name="text" id="text-form" placeholder="В свободной форме" required></textarea>
       </div>
       <button class="popup-button" type="submit" aria-label="Кнопка отправить" >Отправить</button>
     </form>
