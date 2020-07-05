@@ -18,15 +18,14 @@
           <ul class="menu-list">
               <li class="menu-item"><a href="./index.html">Студия</a></li>
               <li class="menu-item"><a href="#">Клиенты</a></li>
-              <li class="menu-item"><a href="#">Магазин</a></li>
+              <li class="menu-item menu-item-active"><a href="#">Магазин</a></li>
               <li class="menu-item"><a href="#">Контакты</a></li>
           </ul>
         </nav>
         <ul class="header-cart">
-          <li class="cart">
+          <li class="cart"> <!--'cart-active' Активный класс для подчёркивания корзины.-->
             <a href="#">Корзина</a>
           </li>
-          <img src=img src="./img/svg-nerds/cart-icon.svg" width="15" height="11">
         </ul>
       </div>
 
@@ -55,28 +54,15 @@
                   <div class="fild-wrapper">
 
                     <label class="price-name" for="before" >От</label>
-                    <input class="price-field" type="number" id="from" value="0">
+                    <input class="price-field" type="number" id="from" placeholder="0">
                   </div>
                   <div class="fild-wrapper">
 
                     <label class="price-name" for="before" >До</label>
-                    <input class="price-field" type="number" id="before" value="15000" >
+                    <input class="price-field" type="number" id="before" placeholder="15 000">
                   </div>
                 </div>
               </fildset>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
               <fieldset class="filter-grid">
                 <legend class="filter-grid-title">Сетка:</legend>
@@ -96,19 +82,6 @@
                   </li>
                 </ul>
               </fieldset>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
               <fieldset class="filter-features">
                 <legend class="filter-features-title">Особенности:</legend>
@@ -135,96 +108,174 @@
                   </li>
               </fieldset>
 
-
-
-
-
-
-
-
-
-
-
-
-              <button class="filter-btn" type="submit" aria-label="Кнопка показать">Показать</button>
+              <button class="filter-btn" type="submit" aria-label="Кнопка показать"><span class="filter-btn-text">Показать</span></button>
 
           </form>
 
 
           <div class="catalog-sorting-wraper">
 
-
-
             <form class="sorting">
 
+              <span class="sortimg-list-title">Сортировать:</span>
+
               <ul class="sorting-list">
-                <span class="sortimg-list-title">Сортировать:</span>
                   <li class="sorting-list-item"><a href="#">По цене </a></li>
                   <li class="sorting-list-item"><a href="#">По типу</a></li>
                   <li class="sorting-list-item"><a href="#">По названию</a></li>
-                  <li class="sorting-list-item"><a href="#">По убыванию</a></li>
-                  <li class="sorting-list-item"><a href="#">По возрастанию</a></li>
+                  <li class="sorting-list-item"><a href="#"><div class="sorting-list-item-img-dawn"></div></a></li>
+                  <li class="sorting-list-item"><a href="#"><div class="sorting-list-item-img-up"></div></a></li>
                 </ul>
 
             </form>
 
+
+
+
             <ul class="catalog">
               <li class="catalog-item">
                 <a href="#">
-                  <img class="catalog-item-img" src="./img/png-nerds/img-sedona.png">
-                  <h3 class="catalog-item-title">Sedona</h3>
-                  <p class="catalog-item-description">Информационный сайт для туристов</p>
-                  <a class="catalog-item-price" aria-label="цена">9900 руб</a>
+                  <div class="browser-img">
+                    <div class="browser-img-container">
+                      <div class="browser-img-circle"></div>
+                      <div class="browser-img-circle"></div>
+                      <div class="browser-img-circle"></div>
+                    </div>
+                  </div>
+
+                  <img class="catalog-item-img" src="./img/png-nerds/img-sedona.png" width="358" height="576">
+
+                  <div class="catalog-item-wrapper">
+                    <h3 class="catalog-item-title">Sedona</h3>
+                    <p class="catalog-item-description">Информационный сайт для туристов</p>
+                    <a class="catalog-item-price" aria-label="цена">
+                      <div class="catalog-item-price-wrapper">9900 руб</div>
+                    </a>
+                  </div>
                 </a>
+
               </li>
 
               <li class="catalog-item">
                 <a href="#">
+                   <div class="browser-img">
+                    <div class="browser-img-container">
+                    <div class="browser-img-circle"></div>
+                      <div class="browser-img-circle"></div>
+                      <div class="browser-img-circle"></div>
+                    </div>
+                  </div>
+
                   <img class="catalog-item-img" src="./img/png-nerds/img-pink.png">
-                  <h3 class="catalog-item-title">Pink</h3>
-                  <p class="catalog-item-description">приложение</p>
-                  <a class="catalog-item-price" aria-label="цена">цена</a>
+
+                  <div class="catalog-item-wrapper">
+                    <h3 class="catalog-item-title">Pink</h3>
+                    <p class="catalog-item-description">Приложение</p>
+                    <a class="catalog-item-price" aria-label="цена">
+                      <div class="catalog-item-price-wrapper">9900 руб</div>
+                    </a>
+                  </div>
                 </a>
               </li>
+
+
               <li class="catalog-item">
                 <a href="#">
+                  <div class="browser-img">
+                    <div class="browser-img-container">
+                      <div class="browser-img-circle"></div>
+                      <div class="browser-img-circle"></div>
+                      <div class="browser-img-circle"></div>
+                    </div>
+                  </div>
                   <img class="catalog-item-img" src="./img/png-nerds/img-barbershop.png">
-                  <h3 class="catalog-item-title">Бородинцкий</h3>
-                  <p class="catalog-item-description">Барбершоп</p>
-                  <a class="catalog-item-price" aria-label="цена">цена</a>
+                  <div class="catalog-item-wrapper">
+                    <h3 class="catalog-item-title">Бородинский</h3>
+                    <p class="catalog-item-description">Барбершоп</p>
+                    <a class="catalog-item-price" aria-label="цена">
+                      <div class="catalog-item-price-wrapper">9900 руб</div>
+                    </a>
+                  </div>
                 </a>
               </li>
               <li class="catalog-item">
                 <a href="#">
+                   <div class="browser-img">
+                    <div class="browser-img-container">
+                    <div class="browser-img-circle"></div>
+                      <div class="browser-img-circle"></div>
+                      <div class="browser-img-circle"></div>
+                    </div>
+                  </div>
                   <img  class="catalog-item-img" src="./img/png-nerds/img-mishka.png">
-                  <h3 class="catalog-item-title">Mishka</h3>
-                  <p class="catalog-item-description">Магазин игрушек ручной работы для дома</p>
-                  <a class="catalog-item-price" aria-label="цена">цена</a>
+                  <div class="catalog-item-wrapper">
+                    <h3 class="catalog-item-title">Mishka</h3>
+                    <p class="catalog-item-description">Магазин игрушек ручной работы для дома</p>
+                    <a class="catalog-item-price" aria-label="цена">
+                      <div class="catalog-item-price-wrapper">9900 руб</div>
+                    </a>
+                  </div>
                 </a>
               </li>
               <li class="catalog-item">
                 <a href="#">
+                  <div class="browser-img">
+                    <div class="browser-img-container">
+                      <div class="browser-img-circle"></div>
+                      <div class="browser-img-circle"></div>
+                      <div class="browser-img-circle"></div>
+                    </div>
+                  </div>
                   <img class="catalog-item-img" src="./img/png-nerds/img-aplus.png">
-                  <h3 class="catalog-item-title">А+</h3>
-                  <p class="catalog-item-description">Учебный сайт</p>
-                  <a class="catalog-item-price" aria-label="цена">цена</a>
+                  <div class="catalog-item-wrapper">
+                    <h3 class="catalog-item-title">А+</h3>
+                    <p class="catalog-item-description">Учебный сайт</p>
+                    <a class="catalog-item-price" aria-label="цена">
+                      <div class="catalog-item-price-wrapper">9900 руб</div>
+                    </a>
+                  </div>
                 </a>
               </li>
               <li class="catalog-item">
                 <a href="#">
+                  <div class="browser-img">
+                    <div class="browser-img-container">
+                      <div class="browser-img-circle"></div>
+                      <div class="browser-img-circle"></div>
+                      <div class="browser-img-circle"></div>
+                    </div>
+                  </div>
                   <img class="catalog-item-img" src="./img/png-nerds/img-kvast.png">
-                  <h3 class="catalog-item-title">Кваст</h3>
-                  <p class="catalog-item-description">Магазин кваса</p>
-                  <a class="catalog-item-price" aria-label="цена">цена</a>
+                  <div class="catalog-item-wrapper">
+                    <h3 class="catalog-item-title">Кваст</h3>
+                    <p class="catalog-item-description">Магазин кваса</p>
+                    <a class="catalog-item-price" aria-label="цена">
+                      <div class="catalog-item-price-wrapper">9900 руб</div>
+                    </a>
+                  </div>
                 </a>
               </li>
             </ul>
+
             <ul class="page-number">
-              <li class="page-number-button-1" aria-label="кнопка 1"><a class="button-link-1" href="#">1</a></li>
-              <li class="page-number-button-2" aria-label="кнопка 2"><a class="button-link-2" href="#">2</a></li>
-              <li class="page-number-button-3" aria-label="кнопка 3"><a class="button-link-3" href="#">3</a></li>
-              <li class="page-number-button-next" aria-label="Следующая"><a class="button-link-next" href="#">Следующая</a></li>
+
+
+              <li class="page-number-button button-link-active" aria-label="кнопка 1">
+                <a class="button-link" href="#">1</a>
+              </li>
+
+
+              <li class="page-number-button" aria-label="кнопка 2">
+                <a class="button-link" href="#">2</a>
+              </li>
+              <li class="page-number-button" aria-label="кнопка 3">
+                <a class="button-link" href="#">3</a>
+              </li>
+              <li class="page-number-button-next" aria-label="Следующая">
+                <a class="button-link-next" href="#">Следующая</a>
+              </li>
             </ul>
+
           </div>
       </div>
     </main>
@@ -236,7 +287,7 @@
           <h3 class="contact-adress-title">Nerds desigh studio</h3>
 
           <div>
-            <p class="adress" >191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p class="adress" >191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
           </div>
 
           <div class="phone">
@@ -282,7 +333,7 @@
     <form class="popup" metod="get">
       <div class="popup-title-wrapper">
         <p class="popup-title">Напишите нам</p>
-        <button class="get-button" aria-label="Кнопка закрыть">Крестик</button>
+        <button class="close-button" aria-label="Кнопка закрыть"></button>
       </div>
 
       <div class="wraper-name-email">
