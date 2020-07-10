@@ -34,7 +34,7 @@
        <h1 class="title-catalog">Магазин готовых шаблонов</h1>
         <div class="container-catalog">
 
-          <form class="filter" method="get" action="#">
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru/">
 
 
               <div class="filter-cost">
@@ -87,23 +87,23 @@
                 <div class="filter-features-title">Особенности:</div>
                 <ul class="filter-features-items">
                   <li class="filter-features-item">
-                    <input class="filter-features-input" type="checkbox" id="slider"  checked>
+                    <input class="filter-features-input" type="checkbox" id="slider"  name="features-slider" checked>
                     <label class="filter-features-label" for="slider">Слайдер</label>
                   </li>
                   <li class="filter-features-item">
-                    <input class="filter-features-input" type="checkbox" id="benefits" value="benefits">
+                    <input class="filter-features-input" type="checkbox" id="benefits" name="features-benefits" value="benefits">
                     <label class="filter-features-label" for="benefits">Блок преимуществ </label>
                   </li>
                   <li class="filter-features-item">
-                    <input class="filter-features-input" type="checkbox" id="news"  value="news" checked>
+                    <input class="filter-features-input" type="checkbox" id="news"  name="features-news" value="news" checked>
                     <label class="filter-features-label" for="news">Новости</label>
                   </li>
                   <li class="filter-features-item">
-                    <input class="filter-features-input" type="checkbox" id="galery" value="galery">
+                    <input class="filter-features-input" type="checkbox" id="galery" name="features-galery" value="galery">
                     <label class="filter-features-label" for="galery">Галерея</label>
                   </li>
                   <li class="filter-features-item">
-                    <input class="filter-features-input" type="checkbox" id="card" value="card">
+                    <input class="filter-features-input" type="checkbox" id="card" name="features-card" value="card">
                     <label class="filter-features-label" for="card">Корзина</label>
                   </li>
                 </ul>
@@ -118,7 +118,7 @@
 
             <form class="sorting" method="get">
 
-              <span class="sortimg-list-title">Сортировать:</span>
+              <span class="sorting-list-title">Сортировать:</span>
 
               <ul class="sorting-list">
                   <li class="sorting-list-item"><a href="#">По цене </a></li>
@@ -146,7 +146,7 @@
                   <img class="catalog-item-img" src="./img/png-nerds/img-sedona.png" width="358" height="576" alt="Картинка товара">
 
                   <div class="catalog-item-wrapper">
-                    <h3 class="catalog-item-title">Sedona</h3>
+                    <h3 class="catalog-item-title"><a href="#">Sedona</a></h3>
                     <p class="catalog-item-description">Информационный сайт для туристов</p>
                     <a class="catalog-item-price" aria-label="цена">
                       <div class="catalog-item-price-wrapper">9900 руб</div>
@@ -166,7 +166,7 @@
                   <img class="catalog-item-img" src="./img/png-nerds/img-pink.png" width="358" height="576" alt="Картинка товара">
 
                   <div class="catalog-item-wrapper">
-                    <h3 class="catalog-item-title">Pink</h3>
+                    <h3 class="catalog-item-title"><a href="#">Pink</a></h3>
                     <p class="catalog-item-description">Приложение</p>
                     <a class="catalog-item-price" aria-label="цена">
                       <div class="catalog-item-price-wrapper">9900 руб</div>
@@ -185,7 +185,7 @@
                   </div>
                   <img class="catalog-item-img" src="./img/png-nerds/img-barbershop.png" width="358" height="576" alt="Картинка товара">
                   <div class="catalog-item-wrapper">
-                    <h3 class="catalog-item-title">Бородинский</h3>
+                    <h3 class="catalog-item-title"><a href="#">Бородинский</a></h3>
                     <p class="catalog-item-description">Барбершоп</p>
                     <a class="catalog-item-price" aria-label="цена">
                       <div class="catalog-item-price-wrapper">9900 руб</div>
@@ -202,7 +202,7 @@
                   </div>
                   <img  class="catalog-item-img" src="./img/png-nerds/img-mishka.png" width="358" height="576" alt="Картинка товара">
                   <div class="catalog-item-wrapper">
-                    <h3 class="catalog-item-title">Mishka</h3>
+                    <h3 class="catalog-item-title"><a href="#">Mishka</a></h3>
                     <p class="catalog-item-description">Магазин игрушек ручной работы для дома</p>
                     <a class="catalog-item-price" aria-label="цена">
                       <div class="catalog-item-price-wrapper">9900 руб</div>
@@ -220,7 +220,7 @@
                   <img class="catalog-item-img" src="./img/png-nerds/img-aplus.png" width="358" height="576" alt="Картинка товара">
                   <div class="catalog-item-wrapper">
                     <h3 class="catalog-item-title">А+</h3>
-                    <p class="catalog-item-description">Учебный сайт</p>
+                    <p class="catalog-item-description"><a href="#">Учебный сайт</a></p>
                     <a class="catalog-item-price" aria-label="цена">
                       <div class="catalog-item-price-wrapper">9900 руб</div>
                     </a>
@@ -237,7 +237,7 @@
                   <img class="catalog-item-img" src="./img/png-nerds/img-kvast.png" width="358" height="576" alt="Картинка товара">
                   <div class="catalog-item-wrapper">
                     <h3 class="catalog-item-title">Кваст</h3>
-                    <p class="catalog-item-description">Магазин кваса</p>
+                    <p class="catalog-item-description"><a href="#">Магазин кваса</a></p>
                     <a class="catalog-item-price" aria-label="цена">
                       <div class="catalog-item-price-wrapper">9900 руб</div>
                     </a>
@@ -268,13 +268,9 @@
       </div>
     </main>
    <footer>
-      <div class="map">
-         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2c0c081cd3ad66a83c74fdea0af7394e7fa87b6f6711d84bc9f20edf05f6d138&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>
-        <img class="map-img" src="./img/png-nerds/map.png" width="1440" height="416" alt="Карта">
-        <img class="pin" src="./img/png-nerds/map-marker.png" width="231" height="190" alt="Маркер">
 
-        <div class="map-wrapper">
-          <img class="pin" src="./img/png-nerds/map-marker.png" width="231" height="190" alt="Маркер">
+      <div class="map">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2c0c081cd3ad66a83c74fdea0af7394e7fa87b6f6711d84bc9f20edf05f6d138&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>
           <div class="contact-adress">
             <h3 class="contact-adress-title">Nёrds desigh studio</h3>
             <p class="adress" >191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
@@ -283,8 +279,8 @@
             </div>
             <a href="#" class="contact-adress-button"><span class="contact-adress-button-text">Напишите нам</span></a>
           </div>
-        </div>
       </div>
+
 
 
 
