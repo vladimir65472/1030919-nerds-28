@@ -54,12 +54,12 @@
                   <div class="fild-wrapper">
 
                     <label class="price-name" for="before" >От</label>
-                    <input class="price-field" type="number" id="from" placeholder="0">
+                    <input class="price-field" min="0" type="number" id="from" placeholder="0">
                   </div>
                   <div class="fild-wrapper">
 
                     <label class="price-name" for="before" >До</label>
-                    <input class="price-field" type="number" id="before" placeholder="15 000">
+                    <input class="price-field" min="0" type="number" id="before" placeholder="15 000">
                   </div>
                 </div>
               </div>
@@ -269,16 +269,21 @@
     </main>
    <footer>
 
-      <div class="map">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2c0c081cd3ad66a83c74fdea0af7394e7fa87b6f6711d84bc9f20edf05f6d138&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>
-          <div class="contact-adress">
-            <h3 class="contact-adress-title">Nёrds desigh studio</h3>
-            <p class="adress" >191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-            <div class="phone">
-              <a class="phone-link" href="tel:+78122757575">тел.+7(812)275-75-75</a>
+     <div class="map">
+
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2c0c081cd3ad66a83c74fdea0af7394e7fa87b6f6711d84bc9f20edf05f6d138&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>
+
+          <div class="contact-adress-wrapper">
+            <div class="contact-adress">
+              <h3 class="contact-adress-title">Nёrds desigh studio</h3>
+              <p class="adress" >191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+                <div class="phone">
+                  <a class="phone-link" href="tel:+78122757575">тел.+7(812)275-75-75</a>
+              </div>
+                <a href="#" class="contact-adress-button"><span class="contact-adress-button-text">Напишите нам</span></a>
             </div>
-            <a href="#" class="contact-adress-button"><span class="contact-adress-button-text">Напишите нам</span></a>
           </div>
+
       </div>
 
 

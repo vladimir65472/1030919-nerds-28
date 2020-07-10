@@ -303,7 +303,7 @@ a {
 }
 
 .catalog-item:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
 }
 
 .menu-item  {
@@ -312,7 +312,7 @@ a {
 
 .menu-item-active:before  {
   position: absolute;
-  bottom: -14px;
+  bottom: -10px;
   content: "";
   width: 100%;
   height: 2px;
@@ -392,7 +392,7 @@ a {
 
 .slider {
   width: 100%;
-  height: 425px;
+  height: 430px;
   margin-bottom: 80px;
   background-color: #EEEEEE;
 }
@@ -570,6 +570,7 @@ a {
   height: 18px;
   border-radius: 50%;
   background-color: #FFFFFF;
+  cursor: pointer;
 }
 
 .slider-btn-item-active:before {
@@ -756,6 +757,15 @@ a {
   color: var(--basic-black);
 }
 
+.catalog-item-title a:hover {
+  color: #FB565A;
+}
+
+.catalog-item-title a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
 .catalog-item-description {
 	font-style: normal;
 	font-weight: normal;
@@ -775,6 +785,7 @@ a {
 	line-height: 18px;
 	color: var(--basic-white);
   text-align: center;
+  cursor: pointer;
 }
 
 .catalog-item-price-wrapper {
@@ -821,6 +832,11 @@ a {
   text-transform: uppercase;
   opacity: 0.3;
   color: var(--basic-black);
+}
+
+.sorting-list-item:nth-child(1) a {
+  color: var(--basic-black);
+  opacity: 1;
 }
 
 .sorting-list-item a:hover {
@@ -873,6 +889,7 @@ a {
   line-height: 25px;
   color: var(--basic-extra-gray);
   padding-left: 37px;
+  cursor: pointer;
 }
 
 .filter-grid-label::before {
@@ -957,6 +974,7 @@ a {
   line-height: 25px;
   color: var(--basic-extra-gray);
   padding-left: 36px;
+  cursor: pointer;
 }
 
 .filter-features-label::before {
@@ -1448,6 +1466,7 @@ a {
   height: 81px;
   border-radius: 50%;
   background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+  cursor: pointer;
 }
 
 .social-item:hover {
@@ -1737,6 +1756,14 @@ a {
   background-color: #EEEEEE;
   background: url("../img/png-nerds/map.png") no-repeat center;
   z-index: 1;
+}
+.contact-adress-wrapper {
+  position: relative;
+  top: -416px;
+  width: 1160px;
+  height: 416px;
+  margin: 0 auto;
+
 }
 
 .contact-adress {
