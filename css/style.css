@@ -1891,8 +1891,8 @@ a {
 	opacity: 0.3;
 }
 
-.iframe-title {
-  position: absolute;
-  width: 100%;
-  z-index: 2;
+iframe {
+  border: none;
 }
+
+
