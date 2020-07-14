@@ -255,7 +255,7 @@ a {
   line-height: 22px;
   text-transform: uppercase;
   color: #283136;
-   margin-right: 5px;
+  margin-right: 5px;
 }
 
 .catalog {
@@ -680,7 +680,6 @@ a {
   height: 20px;
   background-color:  #00CA74;
   padding: 15px 39px 15px 39px;
-
 }
 
 .product-item-link-green:hover {
@@ -1590,7 +1589,6 @@ a {
   margin: 0;
   padding: 0;
   margin-bottom: 45px;
-
 }
 
 .popup-title-wrapper {
@@ -1818,13 +1816,13 @@ a {
   background: url("../img/png-nerds/map.png") no-repeat center;
   z-index: 1;
 }
+
 .contact-adress-wrapper {
   position: relative;
   top: -416px;
   width: 1160px;
   height: 416px;
   margin: 0 auto;
-
 }
 
 .contact-adress {
@@ -1896,5 +1894,3 @@ iframe {
   width: 100%;
   height: 416px;
 }
-
-
